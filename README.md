@@ -1,6 +1,6 @@
 # Speak at ONE-SHOT Oslo!
 
-The location for the event is still being decided. Watch this space.
+Saturday, May 23th 2015 - Location for the event is still being decided. Watch this space.
 
 ONE-SHOT is a one day single track speaker series presented by NodeConf.
 
