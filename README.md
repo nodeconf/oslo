@@ -1,6 +1,6 @@
-# Speak at ONE-SHOT <insert city name>!
+# Speak at ONE-SHOT Oslo!
 
-<insert dates and location details>
+The location for the event is still being decided. Watch this space.
 
 ONE-SHOT is a one day single track speaker series presented by NodeConf.
 
