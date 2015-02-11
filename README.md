@@ -6,7 +6,7 @@ ONE-SHOT is a one day single track speaker series presented by NodeConf.
 
 ## Talk Acceptance
 
-All talks are still being considered. Talks will be accepted one at a time over about a month. Because the events are structured in a narrative acceptance happens in the order we fill the narrative.
+All talks are still being considered. Talks will be accepted one at a time over about a month. Because the events are structured in a narrative acceptance happens in the order we fill the narrative. Talks are to be presented in English.
 
 **You should still submit your talk! We are definitely still accepting them :)**
 
@@ -18,7 +18,7 @@ The idea doesn't have to be fully fleshed out and we're here to help.
 
 ### Format & Audience
 
-Talks are 20 minutes. There is no time for Q&A after.
+Talks will be 20 minutes long, presented in English. There is no time for Q&A after.
 
 All events with speakers are presented as part of a *narrative*. Don't worry about fitting your talk in to specific narrative, that's the job of the curator, and we may add new narratives based on the proposals we get.
 
