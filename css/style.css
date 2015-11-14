@@ -136,113 +136,6 @@ img.spns {
   max-width:100%;
 }
 
-div#justin-searls {
-  background: url('https://pbs.twimg.com/profile_images/2360535353/20120630-face_200x200.jpg');
-  background-size: 236.60254px auto;
-  background-position: center center;
-}
-
-div#laurie-voss {
-  background: url('https://avatars0.githubusercontent.com/u/185893?v=3&s=250');
-  background-size: 236.60254px auto;
-  background-position: center center;
-}
-
-div#aria-stewart {
-  background: url('https://avatars1.githubusercontent.com/u/2876?v=3&s=250');
-  background-size: 236.60254px auto;
-  background-position: center center;
-}
-
-div#rod-vagg {
-  background: url('/images/rvagg.jpg');
-  background-size: 236.60254px auto;
-  background-position: center center;
-}
-
-div#james-halliday {
-  background: url('https://avatars1.githubusercontent.com/u/12631?v=3&s=250');
-  background-size: 236.60254px auto;
-  background-position: center center;
-}
-
-div#tim-oxley {
-  background: url('https://avatars2.githubusercontent.com/u/43438?v=3&s=250');
-  background-size: 236.60254px auto;
-  background-position: center center;
-}
-
-div#dominic-tarr {
-  background-image: url('https://avatars1.githubusercontent.com/u/259374?v=3&s=200');
-  background-size: 200.60254px auto;
-  background-position: center center;
-}
-div#dominic-tarr .hex1 {
-  background-image: url('https://avatars1.githubusercontent.com/u/259374?v=3&s=200');
-  background-position: -22px 0px;
-  background-size: 190.60254px auto;
-}
-div#dominic-tarr .hex1:after {
-  background-position: -22px 0px;
-  margin-top: -5.19615px;
-}
-div#aria-stewart {      background: url('https://avatars1.githubusercontent.com/u/2876?v=3&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-}
-div#dominic-tarr {      background-image: url('https://avatars1.githubusercontent.com/u/259374?v=3&s=200');
-      background-size: 200.60254px auto;
-      background-position: center center;
-}
-div#james-halliday {      background: url('https://avatars1.githubusercontent.com/u/12631?v=3&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-}
-div#justin-searls {      background: url('https://pbs.twimg.com/profile_images/2360535353/20120630-face_200x200.jpg');
-      background-size: 236.60254px auto;
-      background-position: center center;
-}
-div#laurie-voss {      background: url('https://avatars0.githubusercontent.com/u/185893?v=3&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-}
-div#rod-vagg {      background: url('/images/rvagg.jpg');
-      background-size: 236.60254px auto;
-      background-position: center center;
-}
-div#sarah-hui {      background: url('/images/sarah.jpg');
-      background-size: 236.60254px auto;
-      background-position: center center;
-}
-div#tim-oxley {      background: url('https://avatars2.githubusercontent.com/u/43438?v=3&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-}
-div#jonathan-barnett {
-      background: url('https://avatars0.githubusercontent.com/u/640613?v=3&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-    }
-
-div#feross-aboukhadijeh {
-      background: url('https://avatars3.githubusercontent.com/u/121766?v=3&s=250');
-      background-size: 236.60254px auto;
-      background-position: center center;
-    }
-
-div#elvis-adomnica {
-      background: url('../images/elvis.jpg');
-      background-size: 236.60254px auto;
-      background-position: center center;
-}
-
-
-div#sarah-hui {
-  background: url('/images/sarah.jpg');
-  background-size: 236.60254px auto;
-  background-position: center center;
-}
-
 p.spns {
   text-align:center;
 }
@@ -285,6 +178,16 @@ div.speaker {
 
 /*  MAIN LAYOUT	============================================================================= */
 
+a.photo-credit {
+    position: absolute;
+    top: 73px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+a.photo-credit:hover {
+    color: #fff;
+}
 
 #full-baner{
   position:relative;
@@ -448,86 +351,86 @@ color:#ee3344;
 
 @media (max-width: 1000px) {
   
-.content-wrapper{
-  position:relative;  
-}
-#full-banner{
-  background:url(../images/chch1.jpg) no-repeat center;
-  background-size:cover;
-}
+    .content-wrapper{
+      position:relative;  
+    }
+    #full-banner{
+      background:url(../images/oslo.jpg) no-repeat center;
+      background-size:cover;
+    }
 
-h1 {
-  font-size: 4em;
-  letter-spacing: -4px;
-  line-height: 1em;
-  margin-bottom:50px;
-}
-#full-banner h1 {
-  line-height: 1em;
-  margin-bottom:10px;
-}
-#full-banner h2{
-  font-size: 2em;
-}
-.section {
-  padding: 50px 0;
-}
-div.speaker {
-  width: 100%;
-  float: none;
-  margin-right: 0;
-  height: initial;
-  margin-bottom: 120px;
-}
-#sp0nsors a {
-  width: 100%;
-  display: block;
-  margin: 50px 0;
-  text-align: center;
-}
-img.spns {
-  max-height: none;
-  text-align: center;
-  vertical-align: middle;
-  max-width: 50%;
-}
-  
-.banner-text {
-  font-size: 25px;
-  line-height: 25px;
-}
-img.full-logo {
-  width: 200px;
-}
-#navigation ul{
-  position:relative;
-  top: 0;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display:none;
-}
-#navigation li{
-  display:block;
-}
+    h1 {
+      font-size: 4em;
+      letter-spacing: -4px;
+      line-height: 1em;
+      margin-bottom:50px;
+    }
+    #full-banner h1 {
+      line-height: 1em;
+      margin-bottom:10px;
+    }
+    #full-banner h2{
+      font-size: 2em;
+    }
+    .section {
+      padding: 50px 0;
+    }
+    div.speaker {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+      height: initial;
+      margin-bottom: 120px;
+    }
+    #sp0nsors a {
+      width: 100%;
+      display: block;
+      margin: 50px 0;
+      text-align: center;
+    }
+    img.spns {
+      max-height: none;
+      text-align: center;
+      vertical-align: middle;
+      max-width: 50%;
+    }
+      
+    .banner-text {
+      font-size: 25px;
+      line-height: 25px;
+    }
+    img.full-logo {
+      width: 200px;
+    }
+    #navigation ul{
+      position:relative;
+      top: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display:none;
+    }
+    #navigation li{
+      display:block;
+    }
 
-#navigation li a {
-  padding: 8px 30px;
-  display: block;
-}
-.fotorama {
-  display:none;
-}
-.mobile-nav {
-  color: #fff;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 37px;
-  display:block;
-}
-.ticket-block, .stay-play{
-  width:100% !important;
-  float:none !important;
-}
+    #navigation li a {
+      padding: 8px 30px;
+      display: block;
+    }
+    .fotorama {
+      display:none;
+    }
+    .mobile-nav {
+      color: #fff;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 37px;
+      display:block;
+    }
+    .ticket-block, .stay-play{
+      width:100% !important;
+      float:none !important;
+    }
 
 }
