@@ -1,0 +1,533 @@
+/* NodeConf Template */
+/* hexagons */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.hexagon3 {      /*this smushes a square into a 60deg/120deg rhombus*/
+  position: relative;
+  width: 150px;
+  height: 86.60254px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  border-left: solid 3px white;
+  border-right: solid 3px white;
+  /*cover up the -moz-box shadows */
+
+  filter: grayscale(100%); /* Current draft standard */
+  -webkit-filter: grayscale(100%); /* New WebKit */
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */
+  filter: gray; /* IE */
+  -webkit-filter: grayscale(1); /* Old WebKit */
+}
+
+.hexagon3 .hex1,
+.hexagon3 .hex2 {
+  position: absolute;
+  overflow: hidden;
+  width: 106.06602px;
+  height: 106.06602px;
+  left: 19.65064px;
+  /*for some reason this 1px correction is needed */
+  background: inherit;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  -moz-transform: scaleY(0.57735) rotate(-45deg);
+  -ms-transform: scaleY(0.57735) rotate(-45deg);
+  -webkit-transform: scaleY(0.57735) rotate(-45deg);
+  transform: scaleY(0.57735) rotate(-45deg);
+}
+.hexagon3 .hex1:after,
+.hexagon3 .hex2:after {
+  /*counter rotate and un-scale the bg image*/
+  content: "";
+  position: absolute;
+  left: -22.65064px;
+  /*same correction as up above */
+  width: 150px;
+  height: 106.06602px;
+  top: 0;
+  background: inherit;
+  -moz-transform: rotate(45deg) scaleY(1.73205);
+  -ms-transform: rotate(45deg) scaleY(1.73205);
+  -webkit-transform: rotate(45deg) scaleY(1.73205);
+  transform: rotate(45deg) scaleY(1.73205);
+}
+.hexagon3 .hex1 {
+  top: -53.03301px;
+  border-top: solid 5.19615px white;
+  border-right: solid 5.19615px white;
+}
+.hexagon3 .hex1:after {
+  background-position: center 17%;
+  margin-top: -5.19615px;
+}
+.hexagon3 .hex2 {
+  bottom: -53.03301px;
+  border-left: solid 5.19615px white;
+  border-bottom: solid 5.19615px white;
+}
+.hexagon3 .hex2:after {
+  background-position: center 83%;
+  margin-left: -4.19615px;
+  /*that pesky single pixel correction again*/
+}
+.hexagon3:after {
+  content: "";
+  position: absolute;
+  top: 2.12132px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 82.3599px;
+  background: inherit;
+}
+
+
+div.header {
+  text-align:center;
+}
+img.logo {
+  width:80%;
+}
+div.info {
+  width:100%;
+  font-family:Reenie Beanie;
+  font-size:200%;
+  text-align:center;
+  color:#333333;
+}
+div#main-grid {
+  margin-top:20px;
+}
+body {
+  color:#333333;
+}
+h2 {
+  font-family:Lato;
+  font-weight:normal;
+  color:#333333;
+}
+h3 {
+  font-family:Lato;
+  font-weight:normal;
+  color:#333333;
+}
+p {
+	font-family: Lato;
+	text-align: center;  /*font-size:150%;*/
+}
+
+div.conf-info {
+  margin-left:10%;
+  margin-right:10%;
+  padding: 0 0 0 0;
+  text-align:left;
+}
+
+
+img.spns {
+  max-width:100%;
+}
+
+div#justin-searls {
+  background: url('https://pbs.twimg.com/profile_images/2360535353/20120630-face_200x200.jpg');
+  background-size: 236.60254px auto;
+  background-position: center center;
+}
+
+div#laurie-voss {
+  background: url('https://avatars0.githubusercontent.com/u/185893?v=3&s=250');
+  background-size: 236.60254px auto;
+  background-position: center center;
+}
+
+div#aria-stewart {
+  background: url('https://avatars1.githubusercontent.com/u/2876?v=3&s=250');
+  background-size: 236.60254px auto;
+  background-position: center center;
+}
+
+div#rod-vagg {
+  background: url('/images/rvagg.jpg');
+  background-size: 236.60254px auto;
+  background-position: center center;
+}
+
+div#james-halliday {
+  background: url('https://avatars1.githubusercontent.com/u/12631?v=3&s=250');
+  background-size: 236.60254px auto;
+  background-position: center center;
+}
+
+div#tim-oxley {
+  background: url('https://avatars2.githubusercontent.com/u/43438?v=3&s=250');
+  background-size: 236.60254px auto;
+  background-position: center center;
+}
+
+div#dominic-tarr {
+  background-image: url('https://avatars1.githubusercontent.com/u/259374?v=3&s=200');
+  background-size: 200.60254px auto;
+  background-position: center center;
+}
+div#dominic-tarr .hex1 {
+  background-image: url('https://avatars1.githubusercontent.com/u/259374?v=3&s=200');
+  background-position: -22px 0px;
+  background-size: 190.60254px auto;
+}
+div#dominic-tarr .hex1:after {
+  background-position: -22px 0px;
+  margin-top: -5.19615px;
+}
+div#aria-stewart {      background: url('https://avatars1.githubusercontent.com/u/2876?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+}
+div#dominic-tarr {      background-image: url('https://avatars1.githubusercontent.com/u/259374?v=3&s=200');
+      background-size: 200.60254px auto;
+      background-position: center center;
+}
+div#james-halliday {      background: url('https://avatars1.githubusercontent.com/u/12631?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+}
+div#justin-searls {      background: url('https://pbs.twimg.com/profile_images/2360535353/20120630-face_200x200.jpg');
+      background-size: 236.60254px auto;
+      background-position: center center;
+}
+div#laurie-voss {      background: url('https://avatars0.githubusercontent.com/u/185893?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+}
+div#rod-vagg {      background: url('/images/rvagg.jpg');
+      background-size: 236.60254px auto;
+      background-position: center center;
+}
+div#sarah-hui {      background: url('/images/sarah.jpg');
+      background-size: 236.60254px auto;
+      background-position: center center;
+}
+div#tim-oxley {      background: url('https://avatars2.githubusercontent.com/u/43438?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+}
+div#jonathan-barnett {
+      background: url('https://avatars0.githubusercontent.com/u/640613?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+div#feross-aboukhadijeh {
+      background: url('https://avatars3.githubusercontent.com/u/121766?v=3&s=250');
+      background-size: 236.60254px auto;
+      background-position: center center;
+    }
+
+div#elvis-adomnica {
+      background: url('../images/elvis.jpg');
+      background-size: 236.60254px auto;
+      background-position: center center;
+}
+
+
+div#sarah-hui {
+  background: url('/images/sarah.jpg');
+  background-size: 236.60254px auto;
+  background-position: center center;
+}
+
+p.spns {
+  text-align:center;
+}
+img.spns {
+  max-height:70px;
+  text-align:center;
+  vertical-align:middle;
+}
+
+div.speaker {
+	width: 47%;
+	float: left;
+	margin-right: 2%;
+	height: 610px;
+}
+
+.sp0nsor-link {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: all 1s ease;
+  padding-bottom:4px;
+}
+
+.sp0nsor-link.active {
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+
+.sp0nsor-blurb {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.sp0nsor-blurb.active {
+  opacity: 1;
+}
+
+.sp0nsor-blurb a {
+  width: initial !important;
+  margin: initial !important;
+}
+
+/*  MAIN LAYOUT	============================================================================= */
+
+
+#full-baner{
+  position:relative;
+  height:100%;
+  width:100%;
+}
+.banner-text{
+  font-size: 30px;
+  margin: 30px 0;
+  text-shadow:0 0 10px rgba(0,0,0,0.8);
+}
+.header-logo{
+  cursor:pointer;
+}
+#main {
+  background: #fff;
+  position: relative;
+}
+.content-wrapper{
+  position:absolute;
+  height:100%;
+  width:100%;
+  z-index:1;
+  display:table;
+  vertical-align:middle
+}
+#content, .banner-content{
+  max-width:1200px;
+  margin:auto;
+  box-sizing:border-box;
+  padding:0 20px;
+}
+.banner-content{
+  display:table-cell;
+  vertical-align:middle;
+  padding: 100px 20px 0;
+  color: #fff;
+}
+#full-banner h1, #full-banner h2, #full-banner h3{
+  color:#fff;
+  text-shadow:0 0 10px rgba(0,0,0,0.8);
+}
+#header{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:2;
+  width:100%;
+  background:#333333;  
+  text-align: left;
+}
+hr {
+  border: 2px solid #000;
+  background: #000;
+  margin: 50px auto;
+}
+.section {
+  padding: 100px 0;
+  clear:both;
+  text-align:center;
+}
+#navigation{
+  text-align: left;
+  padding: 10px 20px;
+  max-width:1200px;
+  margin:auto;
+  position:relative;
+}
+
+#navigation ul{
+  margin:0;
+  padding:0;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+#navigation li{
+  display:inline-block;
+  list-style:none;
+  padding:0;
+}
+#navigation li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+#navigation li a:hover{
+color:#ee3344;
+}
+
+			
+#content #tickets .ticket-block {
+	width: 47%;
+	display: block;
+	float: left;
+}
+#content #stay-play .stay-play {
+	width: 30%;
+	display: inline-block;
+}
+#sp0nsors a {
+  width: 150px;
+  display: inline-block;
+  margin: 20px 30px;
+}
+.scroll-indicator{
+  position:relative;
+}
+.scroll-indicator i{
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top:0;
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+}
+.scroll-indicator:hover i{
+  top:10px;
+  text-shadow:0 0 5px #000;
+}
+.scroll-indicator i:before {
+  font-size: 50px;
+  color: #fff;
+}
+.mobile-nav {
+  display:none;
+}
+.stay-play{
+  height: 250px;
+  width: 100%;
+  background-size: cover !important;
+  margin-right: 3%;
+  margin-bottom:25px;
+}
+.stay-play .overlay{
+  color:#fff;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  background: none;
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  text-shadow:0 0 10px #000;
+  position:relative;
+}
+.stay-play:hover .overlay{
+  background: rgba(255, 107, 0, 0.5);
+}
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background: #000;
+  width: 100%;
+  text-align: left;
+}
+
+@media (max-width: 1000px) {
+  
+.content-wrapper{
+  position:relative;  
+}
+#full-banner{
+  background:url(../images/chch1.jpg) no-repeat center;
+  background-size:cover;
+}
+
+h1 {
+  font-size: 4em;
+  letter-spacing: -4px;
+  line-height: 1em;
+  margin-bottom:50px;
+}
+#full-banner h1 {
+  line-height: 1em;
+  margin-bottom:10px;
+}
+#full-banner h2{
+  font-size: 2em;
+}
+.section {
+  padding: 50px 0;
+}
+div.speaker {
+  width: 100%;
+  float: none;
+  margin-right: 0;
+  height: initial;
+  margin-bottom: 120px;
+}
+#sp0nsors a {
+  width: 100%;
+  display: block;
+  margin: 50px 0;
+  text-align: center;
+}
+img.spns {
+  max-height: none;
+  text-align: center;
+  vertical-align: middle;
+  max-width: 50%;
+}
+  
+.banner-text {
+  font-size: 25px;
+  line-height: 25px;
+}
+img.full-logo {
+  width: 200px;
+}
+#navigation ul{
+  position:relative;
+  top: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display:none;
+}
+#navigation li{
+  display:block;
+}
+
+#navigation li a {
+  padding: 8px 30px;
+  display: block;
+}
+.fotorama {
+  display:none;
+}
+.mobile-nav {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 37px;
+  display:block;
+}
+.ticket-block, .stay-play{
+  width:100% !important;
+  float:none !important;
+}
+
+}
