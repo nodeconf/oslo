@@ -1,95 +1,3 @@
-/* NodeConf Template */
-/* hexagons */
-* {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.hexagon3 {      /*this smushes a square into a 60deg/120deg rhombus*/
-  position: relative;
-  width: 150px;
-  height: 86.60254px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-  border-left: solid 3px white;
-  border-right: solid 3px white;
-  /*cover up the -moz-box shadows */
-
-  filter: grayscale(100%); /* Current draft standard */
-  -webkit-filter: grayscale(100%); /* New WebKit */
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%); /* Not yet supported in Gecko, Opera or IE */
-  filter: gray; /* IE */
-  -webkit-filter: grayscale(1); /* Old WebKit */
-}
-
-.hexagon3 .hex1,
-.hexagon3 .hex2 {
-  position: absolute;
-  overflow: hidden;
-  width: 106.06602px;
-  height: 106.06602px;
-  left: 19.65064px;
-  /*for some reason this 1px correction is needed */
-  background: inherit;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-  -moz-transform: scaleY(0.57735) rotate(-45deg);
-  -ms-transform: scaleY(0.57735) rotate(-45deg);
-  -webkit-transform: scaleY(0.57735) rotate(-45deg);
-  transform: scaleY(0.57735) rotate(-45deg);
-}
-.hexagon3 .hex1:after,
-.hexagon3 .hex2:after {
-  /*counter rotate and un-scale the bg image*/
-  content: "";
-  position: absolute;
-  left: -22.65064px;
-  /*same correction as up above */
-  width: 150px;
-  height: 106.06602px;
-  top: 0;
-  background: inherit;
-  -moz-transform: rotate(45deg) scaleY(1.73205);
-  -ms-transform: rotate(45deg) scaleY(1.73205);
-  -webkit-transform: rotate(45deg) scaleY(1.73205);
-  transform: rotate(45deg) scaleY(1.73205);
-}
-.hexagon3 .hex1 {
-  top: -53.03301px;
-  border-top: solid 5.19615px white;
-  border-right: solid 5.19615px white;
-}
-.hexagon3 .hex1:after {
-  background-position: center 17%;
-  margin-top: -5.19615px;
-}
-.hexagon3 .hex2 {
-  bottom: -53.03301px;
-  border-left: solid 5.19615px white;
-  border-bottom: solid 5.19615px white;
-}
-.hexagon3 .hex2:after {
-  background-position: center 83%;
-  margin-left: -4.19615px;
-  /*that pesky single pixel correction again*/
-}
-.hexagon3:after {
-  content: "";
-  position: absolute;
-  top: 2.12132px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 82.3599px;
-  background: inherit;
-}
-
-
 div.header {
   text-align:center;
 }
@@ -118,10 +26,6 @@ h3 {
   font-family:Lato;
   font-weight:normal;
   color:#333333;
-}
-p {
-	font-family: Lato;
-	text-align: center;  /*font-size:150%;*/
 }
 
 div.conf-info {
@@ -178,15 +82,20 @@ div.speaker {
 
 /*  MAIN LAYOUT	============================================================================= */
 
+#intro {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 a.photo-credit {
-    position: absolute;
-    top: 73px;
-    left: 5px;
-    color: rgba(255, 255, 255, 0.35);
+  position: absolute;
+  top: 73px;
+  left: 5px;
+  color: rgba(255, 255, 255, 0.35);
 }
 
 a.photo-credit:hover {
-    color: #fff;
+  color: #fff;
 }
 
 #full-baner{
@@ -215,7 +124,7 @@ a.photo-credit:hover {
   vertical-align:middle
 }
 #content, .banner-content{
-  max-width:1200px;
+  max-width:800px;
   margin:auto;
   box-sizing:border-box;
   padding:0 20px;
@@ -245,9 +154,9 @@ hr {
   margin: 50px auto;
 }
 .section {
-  padding: 100px 0;
+  padding: 70px 0;
   clear:both;
-  text-align:center;
+  text-align:left;
 }
 #navigation{
   text-align: left;
