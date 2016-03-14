@@ -1,3 +1,12 @@
+#main h2 {
+  font-family: Open Sans, verdana, arial, helvetica, helve, sans-serif;
+  margin-bottom: 0.2em;
+  font-size: 5.2em;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -7px;
+}
+
 div.header {
   text-align:center;
 }
@@ -44,43 +53,59 @@ p.spns {
   text-align:center;
 }
 img.spns {
-  max-height:70px;
   text-align:center;
   vertical-align:middle;
 }
 
 div.speaker {
-	width: 47%;
-	float: left;
-	margin-right: 2%;
-	height: 610px;
+  width: 47%;
+  float: left;
+  margin-right: 2%;
+  height: 610px;
 }
 
-.sp0nsor-link {
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
-  transition: all 1s ease;
-  padding-bottom:4px;
+#sp0nsors .grid:before,
+#sp0nsors .grid:after {
+  content: " ";
+  display: table;
 }
 
-.sp0nsor-link.active {
-  border-bottom: 1px solid rgba(0, 0, 0, 1);
+#sp0nsors .grid:after {
+  clear: both;
+  margin-bottom: 50px;
 }
 
-.sp0nsor-blurb {
-  opacity: 0;
-  transition: all 1s ease;
+#sp0nsors .grid .cell {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  width: 250px;
+  height: 150px;
+  float: left;
+  margin-right: 10px;
 }
 
-.sp0nsor-blurb.active {
-  opacity: 1;
+#sp0nsors .grid a {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-decoration: none;
+  text-indent: -10000em;
 }
 
-.sp0nsor-blurb a {
-  width: initial !important;
-  margin: initial !important;
+.bengler {
+  background-image: url(../images/sp0nsors/bengler.svg);
+  background-size: 220px 46.5px;
 }
 
-/*  MAIN LAYOUT	============================================================================= */
+.acme {
+  background-image: url(../images/sp0nsors/acme-inc.svg);
+  background-size: 220px 47px;
+}
+
+/*  MAIN LAYOUT  ============================================================================= */
 
 #intro {
   text-align: center;
@@ -112,7 +137,7 @@ a.photo-credit:hover {
   cursor:pointer;
 }
 #main {
-  background: #fff;
+  background: url(../images/bg.png);
   position: relative;
 }
 .content-wrapper{
@@ -123,7 +148,7 @@ a.photo-credit:hover {
   display:table;
   vertical-align:middle
 }
-#content, .banner-content{
+.container {
   max-width:800px;
   margin:auto;
   box-sizing:border-box;
@@ -154,9 +179,10 @@ hr {
   margin: 50px auto;
 }
 .section {
-  padding: 70px 0;
+  padding: 50px 0;
   clear:both;
   text-align:left;
+  font-size: 1.2em;
 }
 #navigation{
   text-align: left;
@@ -190,20 +216,15 @@ hr {
 color:#ee3344;
 }
 
-			
+      
 #content #tickets .ticket-block {
-	width: 47%;
-	display: block;
-	float: left;
+  width: 47%;
+  display: block;
+  float: left;
 }
 #content #stay-play .stay-play {
-	width: 30%;
-	display: inline-block;
-}
-#sp0nsors a {
-  width: 150px;
+  width: 30%;
   display: inline-block;
-  margin: 20px 30px;
 }
 .scroll-indicator{
   position:relative;
@@ -258,88 +279,112 @@ color:#ee3344;
   text-align: left;
 }
 
+#venue .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#venue img, #venue .map {
+  float: left;
+  width: 60%;
+}
+
+#venue .map {
+  width: 40%;
+}
+
 @media (max-width: 1000px) {
-  
-    .content-wrapper{
-      position:relative;  
-    }
-    #full-banner{
-      background:url(../images/oslo.jpg) no-repeat center;
-      background-size:cover;
-    }
+  #venue .map {
+    display: none;
+  }
 
-    h1 {
-      font-size: 4em;
-      letter-spacing: -4px;
-      line-height: 1em;
-      margin-bottom:50px;
-    }
-    #full-banner h1 {
-      line-height: 1em;
-      margin-bottom:10px;
-    }
-    #full-banner h2{
-      font-size: 2em;
-    }
-    .section {
-      padding: 50px 0;
-    }
-    div.speaker {
-      width: 100%;
-      float: none;
-      margin-right: 0;
-      height: initial;
-      margin-bottom: 120px;
-    }
-    #sp0nsors a {
-      width: 100%;
-      display: block;
-      margin: 50px 0;
-      text-align: center;
-    }
-    img.spns {
-      max-height: none;
-      text-align: center;
-      vertical-align: middle;
-      max-width: 50%;
-    }
-      
-    .banner-text {
-      font-size: 25px;
-      line-height: 25px;
-    }
-    img.full-logo {
-      width: 200px;
-    }
-    #navigation ul{
-      position:relative;
-      top: 0;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      display:none;
-    }
-    #navigation li{
-      display:block;
-    }
+  #venue img {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    max-width: 100%;
+    width: auto;
+  }
 
-    #navigation li a {
-      padding: 8px 30px;
-      display: block;
-    }
-    .fotorama {
-      display:none;
-    }
-    .mobile-nav {
-      color: #fff;
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 37px;
-      display:block;
-    }
-    .ticket-block, .stay-play{
-      width:100% !important;
-      float:none !important;
-    }
+  .content-wrapper{
+    position:relative;  
+  }
+  #full-banner{
+    background:url(../images/oslo.jpg) no-repeat center;
+    background-size:cover;
+  }
 
+  h1 {
+    font-size: 4em;
+    letter-spacing: -4px;
+    line-height: 1em;
+    margin-bottom:50px;
+  }
+  #full-banner h1 {
+    line-height: 1em;
+    margin-bottom:10px;
+  }
+  #full-banner h2{
+    font-size: 2em;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  div.speaker {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    height: initial;
+    margin-bottom: 120px;
+  }
+  #sp0nsors a {
+    width: 100%;
+    display: block;
+    margin: 50px 0;
+    text-align: center;
+  }
+  img.spns {
+    max-height: none;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 50%;
+  }
+    
+  .banner-text {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  img.full-logo {
+    width: 200px;
+  }
+  #navigation ul{
+    position:relative;
+    top: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:none;
+  }
+  #navigation li{
+    display:block;
+  }
+
+  #navigation li a {
+    padding: 8px 30px;
+    display: block;
+  }
+  .fotorama {
+    display:none;
+  }
+  .mobile-nav {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 37px;
+    display:block;
+  }
+  .ticket-block, .stay-play{
+    width:100% !important;
+    float:none !important;
+  }
 }
