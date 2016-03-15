@@ -1,0 +1,335 @@
+/* NAVBAR/MENU =========================================== */
+.navbar {
+  background-color: #333;
+  -webkit-font-smoothing: antialiased;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.nodeconf-logo {
+  display: inline-block;
+  text-indent: -10000em;
+  width: 90%;
+  max-width: 200px;
+  background: url(../images/nodeconf.svg) no-repeat;
+  background-position: bottom;
+  background-size: 90%;
+  margin-top: 3px;
+  float: right;
+}
+
+.pure-menu-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: Open Sans, verdana, arial, helvetica, helve, sans-serif;
+}
+
+.pure-menu-link:hover {
+  color: #ee3344;
+  transition: color 0.35s;
+}
+
+.pure-menu-active > .pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
+  background-color: transparent;
+}
+
+/* HAMBURGER MENU =========================================== */
+
+.navbar.open {
+  height: 17em;
+}
+
+.hamburger {
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  margin: 8px 8px 0 0;
+}
+
+.hamburger .bar {
+  background-color: #fff;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hamburger .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.hamburger.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 64em) {
+  .nodeconf-logo {
+    float: none;
+  }
+}
+
+@media (max-width: 47.999em) {
+  .hamburger {
+    display: block;
+  }
+}
+
+/* MAIN CONTENT =============================================== */
+html {
+  height: 100%;
+}
+
+body {
+  background: url(../images/bg.png);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  body {
+    background: url(../images/bg@2X.png);
+    background-size: 150px 173px;
+  }
+}
+
+#content {
+  font-family: Open Sans, verdana, arial, helvetica, helve, sans-serif;
+  color: #333;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 810px) {
+  .wrapper {
+    padding: 10px;
+  }
+}
+
+.section {
+  font-size: 1.5em;
+}
+
+h1, .section h2 {
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -7px;
+  margin-bottom: 0.2em;
+}
+
+h1, #banner h2 {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-size: 6em;
+  margin-top: 0.1em;
+}
+
+h2 {
+  font-size: 3.2em;
+}
+
+h3 {
+  font-family: Lato;
+}
+
+a {
+  color: #cc1122;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 550px) {
+  h1, .section h2 {
+    letter-spacing: -4px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 2.8em;
+  }
+
+  .section {
+    font-size: 1.2em;
+  }
+}
+
+/* TOP BANNER IMAGE =========================================== */
+
+a.photo-credit {
+  position: absolute;
+  top: 73px;
+  left: 5px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+a.photo-credit:hover {
+  color: #fff;
+}
+
+#banner {
+  display: table;
+  width: 100%;
+  margin: 0;
+  background: url(../images/oslo-large.jpg);
+  background-size: cover;
+  background-position: 100%;
+  min-height: 770px;
+}
+
+.banner-wrapper {
+  display: table-row;
+}
+
+.banner-content {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+}
+
+.icon-down-open-big {
+  display: inline-block;
+  width: 70px;
+  height: 50px;
+  background: url(../images/arrow.svg) no-repeat 50% 50%;
+  transition: background-position 0.35s;
+}
+
+.icon-down-open-big:hover {
+  background-position: 50% 75%;
+}
+
+/* VENUE SECTION ============================================== */
+#venue .bloated {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#venue .bloated:before,
+#venue .bloated:after {
+  content: " ";
+  display: table;
+}
+
+#venue .bloated:after {
+  clear: both;
+  margin-bottom: 30px;
+}
+
+#venue img, #venue .map {
+  float: left;
+  width: 60%;
+}
+
+#venue .map {
+  width: 40%;
+}
+
+#venue {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1000px) {
+  #venue .map {
+    display: none;
+  }
+
+  #venue img {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+/* SPONSORS SECTION ========================================== */
+#sp0nsors .grid a {
+  display: block;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  height: 150px;
+  margin: 10px 10px 0 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -10000em;
+
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+#sp0nsors .grid a:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#sp0nsors .bengler {
+  background-image: url(../images/sp0nsors/bengler.svg);
+  background-size: 220px 46.5px;
+}
+
+#sp0nsors .acme {
+  background-image: url(../images/sp0nsors/acme-inc.svg);
+  background-size: 220px 47px;
+}
+
+/* SPONSORS SECTION ========================================== */
+footer {
+  padding: 5px 0;
+  background: #2c3e50;
+  color: #ecf0f1;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* CONTACT SECTION ========================================== */
+#contact a {
+  word-wrap: break-word;
+}
