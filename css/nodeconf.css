@@ -117,7 +117,7 @@ body {
   background: url(../images/bg.png);
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   body {
     background: url(../images/bg@2X.png);
     background-size: 150px 173px;
@@ -293,7 +293,6 @@ a.photo-credit:hover {
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.25);
-  height: 150px;
   margin: 10px 10px 0 0;
 
   background-position: center;
@@ -308,9 +307,22 @@ a.photo-credit:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+#sp0nsors .silver a {
+  height: 175px;
+}
+
+#sp0nsors .bronze a {
+  height: 150px;
+}
+
 #sp0nsors .bengler {
   background-image: url(../images/sp0nsors/bengler.svg);
-  background-size: 220px 46.5px;
+  background-size: 350px 74px;
+}
+
+#sp0nsors .opbeat {
+  background-image: url(../images/sp0nsors/opbeat.svg);
+  background-size: 200px 50px;
 }
 
 #sp0nsors .acme {
