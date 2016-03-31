@@ -325,6 +325,11 @@ a.photo-credit:hover {
   background-size: 200px 50px;
 }
 
+#sp0nsors .systek {
+  background-image: url(../images/sp0nsors/systek.png);
+  background-size: 200px 52.8px;
+}
+
 #sp0nsors .acme {
   background-image: url(../images/sp0nsors/acme-inc.svg);
   background-size: 220px 47px;
