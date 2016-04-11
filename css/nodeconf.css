@@ -350,3 +350,188 @@ footer a {
 #contact a {
   word-wrap: break-word;
 }
+
+/* SPEAKERS SECTION ========================================= */
+#speakers ul, #speakers li {
+  margin: 0;
+  padding: 0;
+}
+
+#speakers ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#speakers li {
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  padding-right: 1em;
+  position: relative;
+}
+
+#speakers li:nth-child(4) {
+  margin-left: 112px;
+}
+
+#speakers li:nth-child(5) {
+  margin-right: 25px;
+}
+
+#speakers li:nth-child(1n+4) {
+  margin-top: -50px;
+}
+
+#speakers .name {
+  font-weight: bold;
+  position: absolute;
+  top: 95px;
+  color: #fff;
+  width: 80%;
+  text-shadow: 2px 2px 2px #000;
+  left: 11px;
+  display: none;
+  pointer-events: none;
+}
+
+#speakers li:hover polygon {
+  fill-opacity: 0.4;
+  stroke: #7fbd42;
+}
+
+#speakers li:hover .name {
+  display: block;
+}
+
+#speakers svg {
+  width: 200px;
+}
+
+#speakers polygon {
+  stroke: #333;
+  stroke-width: 10;
+  cursor: pointer;
+  transition: stroke 0.3s;
+}
+
+@media (max-width: 695px) {
+  #speakers li {
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 690px) {
+  #speakers li {
+    margin: 0 0.5em !important;
+  }
+
+  #speakers li .name {
+    display: block;
+    top: 145px;
+  }
+}
+
+/* SPEAKER/SPONSOR MODAL ==================================== */
+#modal-bg {
+  display: none;
+  content: ' ';
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.75);
+  z-index: 6;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+body.modal-open #modal-bg {
+  display: block;
+}
+
+#info-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 20%;
+  z-index: 10;
+}
+
+@media (max-width: 500px) {
+  #info-modal {
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+}
+
+body.modal-open #info-modal {
+  display: block;
+}
+
+#info-modal .wrapper {
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, .5);
+  background: #1b374b;
+  color: #ddd;
+  width: 100%;
+  max-width: 600px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+#info-modal button {
+  background: transparent;
+  border: 0;
+  font-size: 2em;
+  float: right;
+  margin-right: 10px
+}
+
+#info-modal .title, #info-modal .subtitle {
+  margin: 0;
+}
+
+#info-modal .title {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -3px;
+  font-family: Open Sans, verdana, arial, helvetica, helve, sans-serif;
+}
+
+#info-modal img {
+  float: left;
+  width: 200px;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
+@media (max-width: 415px) {
+  #info-modal img {
+    float: none;
+  }
+}
+
+#info-modal .content {
+  font-size: 1.1em;
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+#info-modal .content p:first-child {
+  margin-top: 0;
+}
+
+#info-modal .content p:last-child {
+  margin-bottom: 0;
+}
+
+#info-modal .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}

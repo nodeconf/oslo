@@ -1,4 +1,5 @@
 (function (window, document) {
+  // Hamburger menu
   var menu = document.getElementById('menu'),
     WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange' : 'resize'
 
@@ -63,4 +64,72 @@
         cur.appendChild(document.createTextNode(text))
       })
   })()
+
+  // Modal closing
+  var infoModal = document.getElementById('info-modal')
+  infoModal.addEventListener('click', closeModal)
+  infoModal.querySelector('.wrapper').addEventListener('click', preventCloseModal)
+  document.getElementById('modal-bg').addEventListener('click', closeModal)
+  infoModal.querySelector('.close').addEventListener('click', closeModal)
+
+  // Speaker info
+  var speakers = {}
+  var polys = document.querySelectorAll('#speakers polygon')
+  var polygons = Array.prototype.slice.call(polys, 0)
+  polygons.forEach(function(poly) {
+    if (!poly.classList.contains('tba')) {
+      poly.addEventListener('click', openSpeakerModal, false)
+    }
+  })
+
+  // Modal methods
+  function setModalInfo(title, subtitle, paragraphs, img) {
+    infoModal.querySelector('.title').innerText = title
+    infoModal.querySelector('.subtitle').innerText = subtitle
+    infoModal.querySelector('img').setAttribute('src', img || 'images/blank.gif')
+
+    var contentEl = infoModal.querySelector('.content')
+    while (contentEl.firstChild) {
+      contentEl.removeChild(contentEl.firstChild)
+    }
+
+    paragraphs.forEach(function (text) {
+      contentEl.appendChild(createParagraph(text))
+    })
+  }
+
+  function createParagraph(text) {
+    var para = document.createElement('p')
+    para.appendChild(document.createTextNode(text))
+    return para
+  }
+
+  function openModal() {
+    document.body.classList.add('modal-open')
+  }
+
+  function closeModal() {
+    document.body.classList.remove('modal-open')
+  }
+
+  function preventCloseModal(e) {
+    e.stopPropagation()
+  }
+
+  function openSpeakerModal(e) {
+    var speaker = e.target.getAttribute('data-speaker')
+    var info = speakers[speaker]
+    setModalInfo(info.name, info.talk, info.bio, 'images/speakers/' + speaker + '.jpg')
+    openModal()
+  }
+
+  // Actual speaker info
+  speakers['luke-bond'] = {
+    name: 'Luke Bond',
+    talk: 'Deploying & Running Node.js to Production in 2016',
+    bio: [
+      'Luke is a server developer working at YLD.io, a London-based software engineering consultancy, working mostly with Node.js and Docker.',
+      'Luke built an open-source container-based PaaS called Paz (http://paz.sh) in Node.js.'
+    ]
+  }
 })(this, this.document)
