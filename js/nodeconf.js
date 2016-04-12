@@ -119,6 +119,11 @@
   function openSpeakerModal(e) {
     var speaker = e.target.getAttribute('data-speaker')
     var info = speakers[speaker]
+
+    if (!info) {
+      return
+    }
+
     setModalInfo(info.name, info.talk, info.bio, 'images/speakers/' + speaker + '.jpg')
     openModal()
   }
@@ -130,6 +135,15 @@
     bio: [
       'Luke is a server developer working at YLD.io, a London-based software engineering consultancy, working mostly with Node.js and Docker.',
       'Luke built an open-source container-based PaaS called Paz (http://paz.sh) in Node.js.'
+    ]
+  }
+
+  speakers['kelsey-breseman'] = {
+    name: 'Kelsey Breseman',
+    talk: 'Live Coding Tessel 2: Hello World to Web-controlled Device in 20 Minutes',
+    bio: [
+      'Kelsey Breseman is one of the creators of Tessel and a Steering Committee member of the Tessel Project.',
+      'She has a degree in neural engineering, and is interested in prosthetics, speculative fiction, circus arts, and really long walks.'
     ]
   }
 })(this, this.document)
