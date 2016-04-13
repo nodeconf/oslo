@@ -146,4 +146,13 @@
       'She has a degree in neural engineering, and is interested in prosthetics, speculative fiction, circus arts, and really long walks.'
     ]
   }
+
+  speakers['yoshua-wuyts'] = {
+    name: 'Yoshua Wuyts',
+    talk: 'Tiny messages for big architectures',
+    bio: [
+      'Yosh is a creative engineer who loves messing with computers.',
+      'He\'s been an active member of the Node community for years and specializes in building little tools that achieve big things.'
+    ]
+  }
 })(this, this.document)
