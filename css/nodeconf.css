@@ -320,6 +320,11 @@ a.photo-credit:hover {
   background-size: 350px 74px;
 }
 
+#sp0nsors .yld {
+  background-image: url(../images/sp0nsors/yld.svg);
+  background-size: 135px 100px;
+}
+
 #sp0nsors .opbeat {
   background-image: url(../images/sp0nsors/opbeat.svg);
   background-size: 200px 50px;
