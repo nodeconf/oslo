@@ -155,4 +155,13 @@
       'He\'s been an active member of the Node community for years and specializes in building little tools that achieve big things.'
     ]
   }
+
+  speakers['alexander-pope'] = {
+    name: 'Alexander Pope',
+    talk: 'Thunder and lightning: the making of a future friendly yr.no',
+    bio: [
+      'Regardless of what Google might think, Alexander Pope does *not* write poetry; he mostly writes JavaScript and pushes pixels around.',
+      'Originally of Canadian extraction, Alexander now works and lives in the wilds of Norway (Oslo), keeping one eye on the sky as he works on the weather for NRK and Yr.'
+    ]
+  }
 })(this, this.document)

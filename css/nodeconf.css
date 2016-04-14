@@ -513,7 +513,7 @@ body.modal-open #info-modal {
 #info-modal img {
   float: left;
   width: 200px;
-  margin: 0.5em 0.5em 0.5em 0;
+  margin: 0.5em 0.5em 1em 0;
 }
 
 @media (max-width: 415px) {
