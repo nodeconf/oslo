@@ -164,4 +164,13 @@
       'Originally of Canadian extraction, Alexander now works and lives in the wilds of Norway (Oslo), keeping one eye on the sky as he works on the weather for NRK and Yr.'
     ]
   }
+
+  speakers['jane-kim'] = {
+    name: 'Jane Kim',
+    talk: 'Test Everything: My life as well tested code',
+    bio: [
+      'Jane Kim is a front end developer at Baublebar from Brooklyn, New York. She is usually eating too much, at karaoke, falling (not failing) gracefully, and/or dancing with herself.',
+      'You can find her at a BoroJs meetup in New York City or sipping on coffee and people watching.'
+    ]
+  }
 })(this, this.document)
