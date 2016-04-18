@@ -173,4 +173,12 @@
       'You can find her at a BoroJs meetup in New York City or sipping on coffee and people watching.'
     ]
   }
+
+  speakers['eirik-morland'] = {
+    name: 'Eirik Morland',
+    talk: 'That escalated quickly! Prototyping IoT with JavaScript',
+    bio: [
+      'Developer, beer geek, home brewer and long time fan of the image format GIF. I\'d also like to point out that although I am a beer geek, I am not a beer snob.'
+    ]
+  }
 })(this, this.document)
