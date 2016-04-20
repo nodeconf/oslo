@@ -181,4 +181,14 @@
       'Developer, beer geek, home brewer and long time fan of the image format GIF. I\'d also like to point out that although I am a beer geek, I am not a beer snob.'
     ]
   }
+
+  speakers['evan-morikawa'] = {
+    name: 'Evan Morikawa',
+    talk: 'Node on the Desktop',
+    bio: [
+      'Evan Morikawa is an engineer at Nylas building the email client, N1.',
+      'Before Nylas, Evan was CTO at Proximate, an events & social network analysis company, and was a Techstars dev in residence.',
+      'He splits his time between NYC and San Francisco and enjoys reviewing his Moves geo-tracking data to find a new places to explore next.'
+    ]
+  }
 })(this, this.document)
