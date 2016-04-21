@@ -191,4 +191,15 @@
       'He splits his time between NYC and San Francisco and enjoys reviewing his Moves geo-tracking data to find a new places to explore next.'
     ]
   }
+
+  speakers['matthew-podwysocki'] = {
+    name: 'Matthew Podwysocki',
+    talk: 'The Church and the Bizarre World of NPM',
+    bio: [
+      'Matthew Podwysocki is a Software Engineer and self-described Open Sourcerer at Microsoft.',
+      'He currently works on the Reactive Extensions for all platforms and the Thali Project exploring the Internet of Things and Privacy.',
+      'He is passionate about open source, helping such efforts as Microsoft support of Node.js.',
+      'He also spends his free time helping teach the next generation of software developers through STEM outreach.'
+    ]
+  }
 })(this, this.document)

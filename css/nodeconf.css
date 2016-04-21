@@ -376,7 +376,7 @@ footer a {
   position: relative;
 }
 
-#speakers li:nth-child(4) {
+#speakers li:nth-child(4), #speakers li:nth-child(9) {
   margin-left: 112px;
 }
 
