@@ -325,6 +325,11 @@ a.photo-credit:hover {
   background-size: 199px 148px;
 }
 
+#sp0nsors .schibsted {
+  background-image: url(../images/sp0nsors/schibsted.svg);
+  background-size: 112px 153px;
+}
+
 #sp0nsors .opbeat {
   background-image: url(../images/sp0nsors/opbeat.svg);
   background-size: 200px 50px;
