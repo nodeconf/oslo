@@ -202,4 +202,13 @@
       'He also spends his free time helping teach the next generation of software developers through STEM outreach.'
     ]
   }
+
+  speakers['thomas-watson'] = {
+    name: 'Thomas Watson',
+    talk: 'Instrumenting Node.js in Production',
+    bio: [
+      'Thomas is a member of the Node.js Tracing Working Group and a full time open source developer at Opbeat.',
+      'He enjoys working on mad science projects with Node.js and for some odd reason gets a kick out of implementing network protocols in JavaScript.'
+    ]
+  }
 })(this, this.document)
