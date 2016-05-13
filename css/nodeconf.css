@@ -545,3 +545,7 @@ body.modal-open #info-modal {
   display: table;
   clear: both;
 }
+
+.tito-ticket-name-wrapper {
+  padding-top: 10px;
+}
