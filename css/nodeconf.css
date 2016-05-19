@@ -549,3 +549,32 @@ body.modal-open #info-modal {
 .tito-ticket-name-wrapper {
   padding-top: 10px;
 }
+
+/* ROADBOOK SECTION ========================================== */
+#speakers .organizers svg {
+  width: 300px;
+  pointer-events: none;
+}
+
+#speakers .organizers li:hover polygon {
+  fill-opacity: 1;
+  stroke: #7fbd42;
+}
+
+#speakers .organizers .name {
+  display: block;
+}
+
+.organizers li table {
+  text-align: left;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.organizers td:first-child {
+  padding-right: 15px;
+}
+
+.organizers h4 {
+  margin-top: 0;
+}
