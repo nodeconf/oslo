@@ -211,4 +211,13 @@
       'He enjoys working on mad science projects with Node.js and for some odd reason gets a kick out of implementing network protocols in JavaScript.'
     ]
   }
+
+  speakers['justin-searls'] = {
+    name: 'Justin Searls',
+    talk: 'Happier Test Driven Development with testdouble.js',
+    bio: [
+      'Justin has a gift for stumbling upon all that is broken in the software industry, but is careful to avoid the cynicism that any of its problems are beyond fixing.',
+      'He co-founded Test Double, a software agency of great people dedicated to making software that\'s better for businesses to manage, developers to work with, and customers to use.'
+    ]
+  }
 })(this, this.document)
