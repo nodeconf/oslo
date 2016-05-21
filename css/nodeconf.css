@@ -242,6 +242,25 @@ a.photo-credit:hover {
   background-position: 50% 75%;
 }
 
+/* PROGRAMME SECTION ========================================== */
+#programme .speaker {
+  font-style: normal;
+  font-weight: bold;
+  display: block;
+}
+
+#programme .break {
+  background: #d5d5d5;
+}
+
+#programme .lunch {
+  background: #bbb;
+}
+
+#programme .break th:nth-child(2) {
+  text-align: left;
+}
+
 /* VENUE SECTION ============================================== */
 #venue .bloated {
   max-width: 1000px;
