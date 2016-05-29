@@ -334,9 +334,13 @@ a.photo-credit:hover {
   height: 150px;
 }
 
+#sp0nsors .silver .bronze a {
+  height: 175px;
+}
+
 #sp0nsors .bengler {
   background-image: url(../images/sp0nsors/bengler.svg);
-  background-size: 350px 74px;
+  background-size: 90%;
 }
 
 #sp0nsors .yld {
