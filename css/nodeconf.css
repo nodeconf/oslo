@@ -1,3 +1,7 @@
+.offline {
+  display: none;
+}
+
 /* NAVBAR/MENU =========================================== */
 .navbar {
   background-color: #333;
@@ -278,7 +282,7 @@ a.photo-credit:hover {
   margin-bottom: 30px;
 }
 
-#venue img, #venue .map {
+#venue img.venue, #venue .map {
   float: left;
   width: 60%;
 }

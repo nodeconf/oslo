@@ -128,6 +128,37 @@
     openModal()
   }
 
+  // Offline mode (app cache) handling
+  if (window.applicationCache) {
+    window.applicationCache.addEventListener('updateready', function(e) {
+      if (window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+        try {
+          window.applicationCache.swapCache()
+          window.location.reload()
+        } catch(e) {}
+      }
+    }, false)
+  }
+
+  // Offline adjustments
+  if (navigator.onLine === false || true) {
+    // Show 'offline'-helpers
+    var offlineEls = document.querySelectorAll('.offline')
+    for (var i = 0; i < offlineEls.length; ++i) {
+      offlineEls[i].classList.remove('offline')
+    }
+
+    // Replace Google maps iframe with static map in offline mode
+    var mapFrame = document.querySelector('iframe.map')
+    var mapLink = document.createElement('a')
+    var mapImg = document.createElement('img')
+    mapImg.src = 'images/map.png'
+    mapLink.href = 'https://www.google.com/maps/place/Dansens+Hus/@59.921352,10.752856,16z/data=!4m5!3m4!1s0x0:0x9ad90ca9da2b7f40!8m2!3d59.9213521!4d10.7528555?ll=59.921352,10.752856&z=16&t=m&hl=en-US&gl=US&cid=11157963475436404544'
+    mapLink.appendChild(mapImg)
+    mapLink.className = 'map'
+    mapFrame.parentNode.replaceChild(mapLink, mapFrame)
+  }
+
   // Actual speaker info
   speakers['luke-bond'] = {
     name: 'Luke Bond',
