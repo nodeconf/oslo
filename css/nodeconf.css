@@ -246,6 +246,21 @@ a.photo-credit:hover {
   background-position: 50% 75%;
 }
 
+/* LIVE STREAM SECTION ======================================== */
+#stream .stream-wrapper {
+  position: relative;
+  padding-bottom: 56%;
+  height: 0;
+}
+
+#stream .stream-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* PROGRAMME SECTION ========================================== */
 #programme .speaker {
   font-style: normal;
