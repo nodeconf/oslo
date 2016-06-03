@@ -141,7 +141,7 @@
   }
 
   // Offline adjustments
-  if (navigator.onLine === false || true) {
+  if (navigator.onLine === false) {
     // Show 'offline'-helpers
     var offlineEls = document.querySelectorAll('.offline')
     for (var i = 0; i < offlineEls.length; ++i) {
